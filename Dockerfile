@@ -4,10 +4,8 @@ ENV NODE_ENV dev
 
 WORKDIR /app
 
-COPY package*.json .
+COPY . .
 
 RUN npm install
-
-COPY . .
 
 CMD [ "npm", "start" ]
